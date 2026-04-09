@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+
+  <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- CSS Files -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="contact.css">
+  <!-- Custom Scroll Animation Style -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .scroll-reveal {
+      opacity: 0;
+      transform: translateY(60px);
+      transition: all 0.8s ease-out;
+    }
+
+    .scroll-reveal.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    window.addEventListener('scroll', function () {
+      const reveals = document.querySelectorAll('.scroll-reveal');
+      const screenPosition = window.innerHeight / 1.2;
+
+      reveals.forEach(function (element) {
+        const position = element.getBoundingClientRect().top;
+
+        if (position < screenPosition) {
+          element.classList.add('show');
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <!-- Home Section -->
+  <div id="home">
+    <div class="nav_bar">
+      <div class="profession">WEB-DEVELOPER</div>
+      <div class="bar">
+        <div class="ho"><a href="#home">Home</a></div>
+        <div class="ab"><a href="#about">About</a></div>
+        <div id="pr"><a href="#projects">Projects</a></div>
+        <div id="co"><a href="#contact">Contact</a></div>
+      </div>
+    </div>
+
+    <div class="adjustment">
+      <div class="head">
+        <h3>Hi, There!</h3>
+        <div class="a">
+          <h1 class="im">I'm</h1> <h1> Junaid</h1>
+        </div>
+        <div class="i">
+          I am a Web Developer skilled in Frontend Technologies, such as HTML, CSS, and JavaScript, creating interactive web experiences. I'm passionate about blending design aesthetics with functionality.
+        </div>
+      </div>
+      <div class="profile"></div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div id="about" class="scroll-reveal">
+    <div class="abo">
+      <div class="ab_head">
+        <h3>About Me</h3>
+        <h1 class="im">I am UI Designer &</h1>
+        <h1 class="blue">Web Developer</h1>
+      </div>
+      <div class="ab_content">
+        <p>I am a passionate web developer with a strong background in creating dynamic and responsive websites. My expertise lies in HTML, CSS, and JavaScript, and I am constantly exploring new technologies to enhance my skills.</p>
+      </div>
+    </div>
+  </div>
+
+  
+    <div id="projects" class="scroll-reveal">
+        <div class="section-content">
+            <div class="pro_head">
+                <h1 class="im">My</h1> <h1> Projects</h1>
+            </div>
+
+            <div class="pro_content">
+                <ul>
+                  <li><div class="ig"><a href="http://127.0.0.1:5500/instagram-master/ig.html"><svg aria-label="Instagram" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24"><title>Instagram</title><path d="M12 2.982c2.937 0 3.285.011 4.445.064a6.087 6.087 0 0 1 2.042.379 3.408 3.408 0 0 1 1.265.823 3.408 3.408 0 0 1 .823 1.265 6.087 6.087 0 0 1 .379 2.042c.053 1.16.064 1.508.064 4.445s-.011 3.285-.064 4.445a6.087 6.087 0 0 1-.379 2.042 3.643 3.643 0 0 1-2.088 2.088 6.087 6.087 0 0 1-2.042.379c-1.16.053-1.508.064-4.445.064s-3.285-.011-4.445-.064a6.087 6.087 0 0 1-2.043-.379 3.408 3.408 0 0 1-1.264-.823 3.408 3.408 0 0 1-.823-1.265 6.087 6.087 0 0 1-.379-2.042c-.053-1.16-.064-1.508-.064-4.445s.011-3.285.064-4.445a6.087 6.087 0 0 1 .379-2.042 3.408 3.408 0 0 1 .823-1.265 3.408 3.408 0 0 1 1.265-.823 6.087 6.087 0 0 1 2.042-.379c1.16-.053 1.508-.064 4.445-.064M12 1c-2.987 0-3.362.013-4.535.066a8.074 8.074 0 0 0-2.67.511 5.392 5.392 0 0 0-1.949 1.27 5.392 5.392 0 0 0-1.269 1.948 8.074 8.074 0 0 0-.51 2.67C1.012 8.638 1 9.013 1 12s.013 3.362.066 4.535a8.074 8.074 0 0 0 .511 2.67 5.392 5.392 0 0 0 1.27 1.949 5.392 5.392 0 0 0 1.948 1.269 8.074 8.074 0 0 0 2.67.51C8.638 22.988 9.013 23 12 23s3.362-.013 4.535-.066a8.074 8.074 0 0 0 2.67-.511 5.625 5.625 0 0 0 3.218-3.218 8.074 8.074 0 0 0 .51-2.67C22.988 15.362 23 14.987 23 12s-.013-3.362-.066-4.535a8.074 8.074 0 0 0-.511-2.67 5.392 5.392 0 0 0-1.27-1.949 5.392 5.392 0 0 0-1.948-1.269 8.074 8.074 0 0 0-2.67-.51C15.362 1.012 14.987 1 12 1Zm0 5.351A5.649 5.649 0 1 0 17.649 12 5.649 5.649 0 0 0 12 6.351Zm0 9.316A3.667 3.667 0 1 1 15.667 12 3.667 3.667 0 0 1 12 15.667Zm5.872-10.859a1.32 1.32 0 1 0 1.32 1.32 1.32 1.32 0 0 0-1.32-1.32Z"></path></svg></a></div></li>
+                  <li><div class="fb"><a href="http://127.0.0.1:5500/facebook/facebook.html"><svg aria-label="Facebook" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24"><title>Facebook</title><path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24h11.495v-9.294H9.691V11.01h3.13V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.466.099 2.798.143v3.24l-1.922.001c-1.506 0-1.797.716-1.7971.765v2.313h3.587l-.467 3.696h-3.12V24h6.116C23.403 24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z"/></svg></a></div></li>
+                  <li><div class="go"><a href="http://127.0.0.1:5500/google/google.html"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"><path d="M 25.996094 48 C 13.3125 48 2.992188 37.683594 2.992188 25 C 2.992188 12.316406 13.3125 2 25.996094 2 C 31.742188 2 37.242188 4.128906 41.488281 7.996094 L 42.261719 8.703125 L 34.675781 16.289063 L 33.972656 15.6875 C 31.746094 13.78125 28.914063 12.730469 25.996094 12.730469 C 19.230469 12.730469 13.722656 18.234375 13.722656 25 C 13.722656 31.765625 19.230469 37.269531 25.996094 37.269531 C 30.875 37.269531 34.730469 34.777344 36.546875 30.53125 L 24.996094 30.53125 L 24.996094 20.175781 L 47.546875 20.207031 L 47.714844 21 C 48.890625 26.582031 47.949219 34.792969 43.183594 40.667969 C 39.238281 45.53125 33.457031 48 25.996094 48 Z"></path></svg></a></div></li>
+                  <li><div class="po"><a href="http://127.0.0.1:5500/portfolio/portfolio.html"><svg aria-label="Portfolio" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24"><title>Portfolio</title><path d="M20 6h-4V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2zm0 14H4V8h16v12z"></path></svg></a></div></li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+
+  
+  <div id="contact" class="scroll-reveal">
+    <div class="section-content">
+      <div class="con_head">
+        <h1 class="im">Get in</h1> <h1 class="touch">Touch</h1>
+      </div>
+      <div class="con_content">
+        <div class="contact_details">
+          <form action="">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="contact_info">
+          <h3>Email:</h3><p class="m"> junaidtd100@gmail.com</p>
+          <h3>Phone:</h3><p class="m"> +91 6238459508</p>
+          <h3>Address:</h3><p class="m"> Kizhakkethil House, valapuram, perinthalmanna, kerala, 622393</p>
+        
+      
+          <div class="con_icons">
+            <!-- Instagram -->
+            <div class="ig_li"><a href="https://www.instagram.com/_noven_00/"><svg aria-label="Instagram" class="ci" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24">
+              <title>Instagram</title>
+              <path d="M12 2.982c2.937 0 3.285.011 4.445.064a6.087 6.087 0 0 1 2.042.379
+              3.408 3.408 0 0 1 1.265.823 3.408 3.408 0 0 1 .823 1.265 6.087 6.087 0 0 1 
+              .379 2.042c.053 1.16.064 1.508.064 4.445s-.011 3.285-.064 4.445a6.087 
+              6.087 0 0 1-.379 2.042 3.643 3.643 0 0 1-2.088 2.088 6.087 6.087 0 0 
+              1-2.042.379c-1.16.053-1.508.064-4.445.064s-3.285-.011-4.445-.064a6.087 
+              6.087 0 0 1-2.043-.379 3.408 3.408 0 0 1-1.264-.823 3.408 3.408 0 0 
+              1-.823-1.265 6.087 6.087 0 0 1-.379-2.042c-.053-1.16-.064-1.508-.064-4.445
+              s.011-3.285.064-4.445a6.087 6.087 0 0 1 .379-2.042 3.408 3.408 0 0 1 
+              .823-1.265 3.408 3.408 0 0 1 1.265-.823 6.087 6.087 0 0 1 2.042-.379c1.16-.053 
+              1.508-.064 4.445-.064M12 1c-2.987 0-3.362.013-4.535.066a8.074 8.074 0 0 
+              0-2.67.511 5.392 5.392 0 0 0-1.949 1.27 5.392 5.392 0 0 0-1.269 1.948 8.074 
+              8.074 0 0 0-.51 2.67C1.012 8.638 1 9.013 1 12s.013 3.362.066 4.535a8.074 
+              8.074 0 0 0 .511 2.67 5.392 5.392 0 0 0 1.27 1.949 5.392 5.392 0 0 0 
+              1.948 1.269 8.074 8.074 0 0 0 2.67.51C8.638 22.988 9.013 23 12 23s3.362-.013 
+              4.535-.066a8.074 8.074 0 0 0 2.67-.511 5.625 5.625 0 0 0 3.218-3.218 
+              8.074 8.074 0 0 0 .51-2.67C22.988 15.362 23 14.987 23 12s-.013-3.362-.066-4.535
+              a8.074 8.074 0 0 0-.511-2.67 5.392 5.392 0 0 0-1.27-1.949 5.392 5.392 0 0 
+              0-1.948-1.269 8.074 8.074 0 0 0-2.67-.51C15.362 1.012 14.987 1 12 1Zm0 
+              5.351A5.649 5.649 0 1 0 17.649 12 5.649 5.649 0 0 0 12 6.351Zm0 
+              9.316A3.667 3.667 0 1 1 15.667 12 3.667 3.667 0 0 1 12 15.667Zm5.872-10.859a1.32 
+              1.32 0 1 0 1.32 1.32 1.32 1.32 0 0 0-1.32-1.32Z"/>
+            </svg></a>
+            </div>
+
+            <!-- Facebook -->
+            <div class="fb_li"><a href="https://www.facebook.com/junaid.pk.1276"><svg aria-label="Facebook" class="ci" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24">
+              <title>Facebook</title>
+              <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 
+              1.326 24h11.495v-9.294H9.691V11.01h3.13V8.413c0-3.1 1.893-4.788 
+              4.659-4.788 1.325 0 2.466.099 2.798.143v3.24l-1.922.001c-1.506 
+              0-1.797.716-1.797 1.765v2.313h3.587l-.467 3.696h-3.12V24h6.116C23.403 
+              24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z"/>
+            </svg></a>
+            </div>
+
+            <!-- GitHub -->
+            <div class="gh_li"><a href="https://github.com/juna-id00"><svg aria-label="GitHub" class="ci" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24">
+              <title>GitHub</title>
+              <path d="M12 .297a12 12 0 0 0-3.79 23.4c.6.111.82-.261.82-.58 
+              0-.29-.011-1.061-.017-2.084-3.338.724-4.042-1.611-4.042-1.611 
+              -.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 
+              1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.997 
+              .107-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.933 
+              0-1.311.469-2.381 1.235-3.221-.124-.303-.535-1.524.117-3.176 
+              0 0 1.008-.322 3.3 1.23a11.49 11.49 0 0 1 6 0c2.29-1.552 3.296-1.23 
+              3.296-1.23.653 1.653.242 2.874.118 3.176.77.84 1.233 1.91 1.233 
+              3.221 0 4.61-2.804 5.625-5.475 5.921.43.372.823 1.102.823 2.222 
+              0 1.604-.015 2.896-.015 3.293 0 .321.216.694.825.576A12 12 0 0 0 
+              12 .297Z"/>
+            </svg></a>
+          </div>
+
+        </div>  
+      </div>
+    </div> 
+  </div>
+</body>
+</html>

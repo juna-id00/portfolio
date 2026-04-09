@@ -1,0 +1,46 @@
+#about{
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    background-color: #22282f;
+    display: flex;
+    justify-content: end;
+}
+
+h1{
+    /* color: white; ; */
+    font-size: 48px;
+    line-height: 2px;
+}
+
+.blue{
+    color: #12BDFF;
+    font-size: 48px;
+    line-height: 38px;
+}
+
+.ab_content{
+    color: white;
+    font-size: 18px;
+    width: 80%;
+    /* margin: auto; */
+    padding-top: 20px;
+    transform: translateY(328px);
+    animation: slideup 1s ease-out forwards;
+    opacity: 0;
+}
+@keyframes slideup {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.abo{
+    width: 50%;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
